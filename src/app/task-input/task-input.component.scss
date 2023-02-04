@@ -1,12 +1,14 @@
 mat-card {
-  background-color: #ccdbfd;
-  display: inline-block;
+  max-width: 1500px;
+  margin: 2% auto;
+  margin-top: 0;
 }
 
-.task-input-content {
+mat-form-field {
+  width: 250px !important;
+}
+
+.button-task-add {
+  width: 270px;
   text-align: center;
-}
-
-.task-input-button {
-  margin-bottom: 30%;
 }

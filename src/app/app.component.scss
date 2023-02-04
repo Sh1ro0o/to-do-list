@@ -5,6 +5,16 @@
   text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
-.mat-mdc-table {
-  background-color: #d3e0ff;
+th {
+  background-color: #abc4ff !important;
 }
+
+td {
+  background-color: #d7e3fc !important;
+}
+
+.tasks-table {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
