@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TaskComponent } from './task/task.component';
 import { TaskInputComponent } from './task-input/task-input.component';
 
 //angular material
@@ -13,18 +14,21 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatTableModule } from '@angular/material/table';
+import { MatTableModule, MatTable } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskComponent,
     TaskInputComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatCardModule,
     MatInputModule,
@@ -33,6 +37,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatGridListModule,
     MatTableModule,
     MatSelectModule,
+    MatIconModule
   ],
   providers: [
     MatDatepickerModule,

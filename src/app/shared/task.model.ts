@@ -1,13 +1,29 @@
+import { Priority } from "./app-enums.model";
+
 export class Task {
   public name: string;
   public startDate: Date;
   public endDate: Date;
-  public priority: string;
+  public priority: Priority;
 
   constructor(name: string, startDate: Date, endDate: Date, priority: string) {
     this.name = name;
     this.startDate = startDate;
     this.endDate = endDate;
-    this.priority = priority;
+    if(priority === 'high')
+      this.priority = Priority.HIGH;
+    else if(priority === 'low')
+      this.priority = Priority.LOW;
+    else
+      this.priority = Priority.MEDIUM;
+  }
+
+  priorityToString() {
+    if(this.priority === Priority.HIGH)
+      return 'High';
+    else if(this.priority === Priority.LOW)
+      return 'Low';
+    else
+      return 'Normal';
   }
 }
