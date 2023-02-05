@@ -20,7 +20,7 @@ export class TaskEditComponent implements OnDestroy {
     this.taskName = data.name;
     this.taskStartDate = data.startDate;
     this.taskEndDate = data.endDate;
-    this.priority = data.priorityToString();
+    this.priority = data.priority;
   }
 
   //sets boolean to true -> edited data gets sent in ngOnDestroy()
