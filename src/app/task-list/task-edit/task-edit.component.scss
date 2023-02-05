@@ -6,10 +6,15 @@ mat-card {
 }
 
 mat-form-field {
-  width: 250px !important;
+  width: 200px !important;
 }
 
 .button-task-add {
-  width: 270px;
   text-align: center;
+}
+
+.task-edit-title {
+  text-align: center;
+  color: #96b5ff !important;
+  text-shadow: black 1px 1px;
 }

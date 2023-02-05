@@ -20,10 +20,10 @@ export class Task {
 
   priorityToString() {
     if(this.priority === Priority.HIGH)
-      return 'High';
+      return 'high';
     else if(this.priority === Priority.LOW)
-      return 'Low';
+      return 'low';
     else
-      return 'Normal';
+      return 'normal';
   }
 }

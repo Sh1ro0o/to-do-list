@@ -18,12 +18,17 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule, MatTable } from '@angular/material/table';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
+import { TaskListComponent } from './task-list/task-list.component';
+import { TaskEditComponent } from './task-list/task-edit/task-edit.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskInputComponent
+    TaskInputComponent,
+    TaskListComponent,
+    TaskEditComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatGridListModule,
     MatTableModule,
     MatSelectModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [
     MatDatepickerModule,

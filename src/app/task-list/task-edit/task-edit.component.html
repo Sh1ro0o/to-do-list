@@ -1,0 +1,55 @@
+<h2 mat-dialog-title class="task-edit-title">EDIT TASK</h2>
+<mat-dialog-content>
+  <mat-card>
+    <mat-card-content>
+      <div
+        fxLayout="row wrap"
+        fxLayoutAlign="space-evenly center"
+        fxLayoutGap="20px">
+          <div class="container">
+            <mat-form-field>
+              <mat-label>Task</mat-label>
+              <input
+                matInput
+                type="text"
+                [(ngModel)]="taskName">
+            </mat-form-field>
+          </div>
+          <div class="container">
+            <mat-form-field>
+              <mat-label>Start Date</mat-label>
+              <input matInput [matDatepicker]="pickerStart" [(ngModel)]="taskStartDate">
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="pickerStart"></mat-datepicker-toggle>
+              <mat-datepicker #pickerStart></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="container">
+            <mat-form-field>
+              <mat-label>End Date</mat-label>
+              <input matInput [matDatepicker]="pickerEnd" [(ngModel)]="taskEndDate">
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+              <mat-datepicker #pickerEnd></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="container">
+            <mat-form-field>
+              <mat-label>Priority</mat-label>
+              <mat-select [(value)]="priority">
+                <mat-option value="high">High</mat-option>
+                <mat-option value="normal">Normal</mat-option>
+                <mat-option value="low">Low</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="container button-task-add">
+            <button mat-raised-button (click)="editTask()" [mat-dialog-close]="true" color="primary">EDIT</button>
+          </div>
+          <div class="container button-task-add">
+            <button mat-raised-button [mat-dialog-close]="true" color="accent">CANCEL</button>
+          </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>
