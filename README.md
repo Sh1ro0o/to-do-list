@@ -1,6 +1,6 @@
 # TaskList
 
-![project-1](https://user-images.githubusercontent.com/59924160/220195105-28da4a5b-9f97-47b7-872f-06045b358d55.png)
+![project-2](https://user-images.githubusercontent.com/59924160/220195143-18661f07-e80c-4708-b6d5-a9d8e6528023.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
