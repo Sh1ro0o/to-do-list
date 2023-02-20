@@ -1,5 +1,7 @@
 # TaskList
 
+![project-1](https://user-images.githubusercontent.com/59924160/220195105-28da4a5b-9f97-47b7-872f-06045b358d55.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
 ## Development server
